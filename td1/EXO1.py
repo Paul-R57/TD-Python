@@ -10,10 +10,13 @@ max_number = 0
 solution = ''
 
 for word in possible_words:
-    word_letters = [letter for letter in word]
-    for letter in 
 
-    if word_letters in list_letters:        
+    word_letters = list(word)
+    for letter in list_letters:
+        if letter in word_letters:
+            word_letters.remove(letter)
+
+    if word_letters == []:        
         number_letter = len(word)
         if max_number < number_letter:
             max_number = len(word)
