@@ -6,6 +6,11 @@ possible_words = ['sacre', 'sabre', 'baser', 'cabre', 'garce', 'crase', 'brase',
                     'ace', 'cas', 'car', 'age', 'bac', 'cab', 'as', 'ra', 'sa', 'a']
 
 
+file = open("mots.sansaccent.txt",'r')
+data = file.read()
+
+
+
 max_number = 0
 solution = ''
 
